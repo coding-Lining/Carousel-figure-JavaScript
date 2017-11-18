@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#box{
+    position: relative;
+    width: 700px;
+    height: 300px;
+    margin: 50px auto;
+    border: 1px solid yellow;
+    box-shadow: 1px 1px 8px pink;
+    overflow: hidden;
+    background: url("../image/default.gif")no-repeat center;
+    background-size: 30%;
+}
+#imgBox{
+    position: absolute;
+    left: 0;
+    list-style: none;
+}
+#imgBox div{
+    float: left;
+    width: 700px;
+    height: 300px;
+}
+#imgBox div img{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+ul{
+    list-style: none;
+    position: absolute;
+    bottom: 8px;
+    left: 300px;
+}
+li{
+    margin-right: 5px;
+    float: left;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '';
+    border-radius: 50px;
+    background-color: #FFFFEE;
+    border: 1px solid black;
+}
+#left{
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    top: 135px;
+    list-style: none;
+    width: 20px;
+    height: 30px;
+    background-color: #999999;
+    text-align: center;
+    line-height: 30px;
+}
+#right{
+    position: absolute;
+    right: 0;
+    top: 135px;
+    list-style: none;
+    width: 20px;
+    height: 30px;
+    background-color: #999999;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+}
+a{
+    display: none;
+}
+#box:hover a{
+    display: block;
+}
+.selected{
+    background: red;
+}
